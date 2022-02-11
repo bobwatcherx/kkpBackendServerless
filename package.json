@@ -1,0 +1,31 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "Serverless Cloud todo api",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "cloud",
+    "test": "cloud test"
+  },
+  "devDependencies": {
+    "@jest/globals": "^27.1.0",
+    "@serverless/cloud": "^2.0.0"
+  },
+  "serverless": {
+    "app": "serverlessapp",
+    "org": "bobwatcherx"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^1.29.4",
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "email-templates": "^8.0.8",
+    "mailgun-js": "^0.22.0",
+    "midtrans-client": "^1.3.0",
+    "node-fetch": "^3.2.0",
+    "nodemailer": "^6.7.2",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "nodemailer-smtp-transport": "^2.7.4"
+  }
+}
